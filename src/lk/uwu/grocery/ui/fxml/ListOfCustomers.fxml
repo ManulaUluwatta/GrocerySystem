@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="488.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.ListOfCustomerController">
+   <children>
+      <TableView fx:id="customerDetails_tbl" layoutX="24.0" layoutY="74.0" onMouseClicked="#customerTableAction" prefHeight="370.0" prefWidth="660.0" stylesheets="@../style/CustomerTable.css">
+         <columns>
+            <TableColumn fx:id="tCustID" prefWidth="41.0" text="ID" />
+            <TableColumn fx:id="tCustFirstName" prefWidth="83.0" text="First Name" />
+            <TableColumn fx:id="tCustLastName" prefWidth="88.0" text="Last Name" />
+            <TableColumn fx:id="tCustAddress" minWidth="0.0" prefWidth="86.0" text="Address" />
+            <TableColumn fx:id="tCustEmail" prefWidth="134.0" text="Email" />
+            <TableColumn fx:id="tCustContact" prefWidth="87.0" text="Contact" />
+            <TableColumn fx:id="tCustNic" prefWidth="79.0" text="NIC" />
+            <TableColumn fx:id="tCustType" prefWidth="72.0" text="Type" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="searchByName_txt" layoutX="24.0" layoutY="22.0" prefHeight="25.0" prefWidth="215.0" promptText="Search customer by Name" />
+      <JFXButton fx:id="custSearch_btn" layoutX="258.0" layoutY="19.0" onAction="#customerSearchButtonAction" prefHeight="30.0" prefWidth="89.0" stylesheets="@../style/ManageCustomer.css" text="Search" />
+      <JFXButton fx:id="custRefresh_btn" layoutX="551.0" layoutY="452.0" onAction="#customerRefreshButtonAction" prefHeight="30.0" prefWidth="135.0" stylesheets="@../style/ManageCustomer.css" text="Refresh" />
+   </children>
+</AnchorPane>

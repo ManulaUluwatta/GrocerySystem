@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="289.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.SelectUserProfileController">
+   <children>
+      <TableView fx:id="userProfileViewTable" layoutX="25.0" layoutY="24.0" onMouseClicked="#selectUserAction" prefHeight="241.0" prefWidth="674.0">
+        <columns>
+          <TableColumn fx:id="userNameTbl_cl" prefWidth="166.0" text="User Name" />
+          <TableColumn fx:id="nameTbl_cl" prefWidth="266.0" text="Name" />
+            <TableColumn fx:id="emailTbl_cl" prefWidth="241.0" text="Email" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

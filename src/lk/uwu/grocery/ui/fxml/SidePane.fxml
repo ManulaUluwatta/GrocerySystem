@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="258.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.SidePaneController">
+   <children>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="192.0" layoutY="505.0">
+         <image>
+            <Image url="@../images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="189.0" layoutY="447.0">
+         <image>
+            <Image url="@../images/transaction-512.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="191.0" layoutY="386.0">
+         <image>
+            <Image url="@../images/SeekPng.com_order-icon-png_8049419.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="190.0" layoutY="327.0">
+         <image>
+            <Image url="@../images/hotel-supplier.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="192.0" layoutY="270.0">
+         <image>
+            <Image url="@../images/PngItem_5170836.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="190.0" layoutY="161.0">
+         <image>
+            <Image url="@../images/add_shopping_cart_black_54x54.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="189.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="189.0" layoutY="215.0">
+         <image>
+            <Image url="@../images/Users-Add-User-icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="home_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="100.0" onAction="#homeButtonAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="Home">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="placeOrder_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="157.0" onAction="#placeOrderBtnAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="Place Order ">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton id="manageCustomer_btn" fx:id="manageCustomer_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="211.0" onAction="#manageCustomerAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="Manage Customer ">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="manageItem_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="267.0" onAction="#manageItemAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="Manage Item">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="manageSupplier_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="323.0" onAction="#manageSupplierAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="Manage Suppliers">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="manageOrder_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="382.0" onAction="#manageOrderButtonAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="Manage Order">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="viewSummary_btn" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="443.0" onAction="#viewSummaryAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="Transaction Summary">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="viewSummary_btn1" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="501.0" onAction="#viewSummaryAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="User Profile">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

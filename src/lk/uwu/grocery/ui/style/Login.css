@@ -1,0 +1,7 @@
+#login_btn{
+    -fx-border-width: 2px;
+    -fx-border-radius: 2em;
+    -fx-border-color: black;
+    -fx-background-color: transparent;
+    -fx-background-radius: 2em;
+}

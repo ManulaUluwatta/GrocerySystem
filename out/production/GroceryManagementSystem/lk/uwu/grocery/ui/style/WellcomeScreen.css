@@ -1,0 +1,8 @@
+#start_btn{
+    -fx-background-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-color: black;
+    -fx-background-radius: 2em;
+    -fx-border-radius: 2em;
+    -fx-font-size: 18px;
+}

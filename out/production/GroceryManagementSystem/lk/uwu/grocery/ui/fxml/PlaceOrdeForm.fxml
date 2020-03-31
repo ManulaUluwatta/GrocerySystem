@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="605.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.PlaceOrderFormController">
+   <children>
+      <AnchorPane layoutX="9.0" layoutY="71.0" prefHeight="520.0" prefWidth="576.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <JFXTextField fx:id="orderID_txt" disable="true" labelFloat="true" layoutX="24.0" layoutY="44.0" opacity="0.96" prefHeight="31.0" prefWidth="114.0" promptText="Order ID" />
+            <JFXTextField fx:id="orderDetatiID_txt" disable="true" labelFloat="true" layoutX="24.0" layoutY="91.0" opacity="0.96" prefHeight="31.0" prefWidth="114.0" promptText="Order Detail ID" />
+            <JFXTextField fx:id="paymentID_txt" disable="true" labelFloat="true" layoutX="176.0" layoutY="90.0" opacity="0.96" prefHeight="31.0" prefWidth="121.0" promptText="Payment ID" />
+            <JFXTextField fx:id="orderDate_txt" disable="true" labelFloat="true" layoutX="176.0" layoutY="44.0" opacity="0.96" prefHeight="31.0" prefWidth="121.0" promptText="Order Date" />
+            <JFXTextField fx:id="custID_txt" disable="true" labelFloat="true" layoutX="361.0" layoutY="41.0" opacity="0.96" prefHeight="31.0" prefWidth="121.0" promptText="Customer ID" />
+            <JFXTextField fx:id="custName_txt" disable="true" labelFloat="true" layoutX="361.0" layoutY="88.0" opacity="0.96" prefHeight="31.0" prefWidth="154.0" promptText="Customer Name" />
+            <JFXTextField fx:id="contact_txt" disable="true" labelFloat="true" layoutX="361.0" layoutY="133.0" opacity="0.96" prefHeight="31.0" prefWidth="154.0" promptText="Contact" />
+            <Separator layoutX="341.0" layoutY="9.0" orientation="VERTICAL" prefHeight="159.0" prefWidth="6.0" />
+            <JFXButton fx:id="select_btn" layoutX="498.0" layoutY="37.0" onAction="#selectButtonAction" stylesheets="@../style/PlaceOrderForm.css" text="Select" />
+            <Label layoutX="24.0" layoutY="11.0" prefHeight="17.0" prefWidth="184.0" text="Order Details" textFill="#0098ff" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="11.0" prefHeight="17.0" prefWidth="184.0" text="Customer Details" textFill="#0098ff" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="24.0" layoutY="175.0" prefHeight="6.0" prefWidth="523.0" />
+            <JFXTextField fx:id="itemCode_txt" labelFloat="true" layoutX="24.0" layoutY="191.0" promptText="Item Code" />
+            <JFXButton fx:id="selectItem_btn" layoutX="203.0" layoutY="188.0" onAction="#selectItemButtonAction" stylesheets="@../style/PlaceOrderForm.css" text="Select" />
+            <JFXTextField fx:id="itemName_txt" disable="true" labelFloat="true" layoutX="24.0" layoutY="242.0" opacity="0.91" prefHeight="25.0" prefWidth="257.0" promptText="Item Name">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor></JFXTextField>
+            <JFXTextField fx:id="itemDesc_txt" disable="true" labelFloat="true" layoutX="24.0" layoutY="291.0" opacity="0.91" prefHeight="25.0" prefWidth="257.0" promptText="Item Descrption">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="orderQty_txt" labelFloat="true" layoutX="24.0" layoutY="340.0" onAction="#qtyTextAction" prefHeight="25.0" prefWidth="257.0" promptText="Order Quantity" />
+            <JFXTextField fx:id="pricePerUnit_txt" disable="true" labelFloat="true" layoutX="23.0" layoutY="389.0" opacity="0.91" prefHeight="25.0" prefWidth="257.0" promptText="Price Per Unit">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="discountPerUnit_txt" labelFloat="true" layoutX="23.0" layoutY="436.0" onAction="#discountTextAction" opacity="0.91" prefHeight="25.0" prefWidth="257.0" promptText="Discount %">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXTextField>
+            <JFXTextField fx:id="totalAmount_txt" disable="true" labelFloat="true" layoutX="23.0" layoutY="482.0" opacity="0.91" prefHeight="25.0" prefWidth="257.0" promptText="Total Amount">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </JFXTextField>
+            <JFXButton fx:id="addCart_btn" layoutX="321.0" layoutY="467.0" onAction="#addCartButtonAction" prefHeight="41.0" prefWidth="241.0" stylesheets="@../style/PlaceOrderForm.css" text="Add To Cart" />
+            <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="346.0" layoutY="243.0">
+               <image>
+                  <Image url="@../images/addtoCart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="595.0" layoutY="71.0" prefHeight="520.0" prefWidth="660.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TableView fx:id="orderCart_tbl" layoutX="15.0" layoutY="14.0" prefHeight="288.0" prefWidth="631.0">
+              <columns>
+                <TableColumn fx:id="cart_itemCode" prefWidth="64.0" text="Item Code" />
+                  <TableColumn fx:id="cartItemName" prefWidth="129.0" text="Item Name" />
+                  <TableColumn fx:id="cartOrderQty" prefWidth="93.0" text="Order Quantity" />
+                  <TableColumn fx:id="cartUnitPrice" prefWidth="86.0" text="Unit Price" />
+                  <TableColumn fx:id="cartAmount" prefWidth="87.0" text="Amount" />
+                <TableColumn fx:id="cart_discount" prefWidth="79.0" text="Discount" />
+                  <TableColumn fx:id="cartTotalAmount" prefWidth="92.0" text="Total Amount" />
+              </columns>
+            </TableView>
+            <JFXTextField fx:id="grandTotal_txt" labelFloat="true" layoutX="444.0" layoutY="407.0" prefHeight="25.0" prefWidth="202.0" promptText="Grand Total" />
+            <JFXTextField fx:id="totalDiscount_txt" labelFloat="true" layoutX="444.0" layoutY="365.0" prefHeight="25.0" prefWidth="202.0" promptText="Discount" />
+            <JFXTextField fx:id="total_txt" labelFloat="true" layoutX="444.0" layoutY="320.0" prefHeight="25.0" prefWidth="202.0" promptText="Total" />
+            <JFXButton fx:id="removeFromCart_btn" layoutX="15.0" layoutY="331.0" onAction="#removeButtonAction" prefHeight="29.0" prefWidth="154.0" stylesheets="@../style/DeleteButton.css" text="Remove From Cart" />
+            <JFXButton fx:id="confirm_btn" layoutX="444.0" layoutY="464.0" onAction="#makePaymentAction" prefHeight="29.0" prefWidth="202.0" stylesheets="@../style/PlaceOrderForm.css" text="Make Payment" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="9.0" prefHeight="53.0" prefWidth="1249.0" style="-fx-background-color: white;" text="Place Order">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

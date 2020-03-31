@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="605.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.ManageOrderFormController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="75.0" prefHeight="517.0" prefWidth="1245.0" style="-fx-background-color: white;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <TableView fx:id="orderTable" layoutX="21.0" layoutY="14.0" onMouseClicked="#orderTableAction" prefHeight="434.0" prefWidth="362.0">
+              <columns>
+                <TableColumn fx:id="orderID_cl" prefWidth="97.99996948242188" text="Order ID" />
+                <TableColumn fx:id="custID_cl" prefWidth="102.0" text="Customer ID" />
+                  <TableColumn fx:id="orderDate_cl" prefWidth="162.00003051757812" text="Order Date" />
+              </columns>
+            </TableView>
+            <Separator layoutX="434.0" layoutY="62.0" orientation="VERTICAL" prefHeight="343.0" prefWidth="7.0" />
+            <TableView fx:id="orderDatail_tbl" layoutX="492.0" layoutY="14.0" prefHeight="434.0" prefWidth="733.0">
+              <columns>
+                <TableColumn fx:id="orderDetailID_dcl" prefWidth="92.0" text="Order Detail ID" />
+                <TableColumn fx:id="orderID_dcl" prefWidth="81.0" text="Order ID" />
+                  <TableColumn fx:id="itemCode_dcl" prefWidth="83.0" text="Item Code" />
+                  <TableColumn fx:id="itemName_dcl" prefWidth="91.0" text="Item Name" />
+                  <TableColumn fx:id="unitPrice_dcl" prefWidth="95.0" text="Price Per Unit" />
+                  <TableColumn fx:id="orderQty_dcl" prefWidth="65.0" text="Order Qty" />
+                  <TableColumn fx:id="discount_dcl" prefWidth="118.0" text="Discount" />
+                  <TableColumn fx:id="totalAmount_dcl" prefWidth="107.0" text="Total Amount" />
+              </columns>
+            </TableView>
+            <JFXButton layoutX="657.0" layoutY="460.0" prefHeight="29.0" prefWidth="174.0" stylesheets="@../style/ManageOrder.css" text="Add New Order Detail" />
+            <JFXButton layoutX="862.0" layoutY="460.0" prefHeight="29.0" prefWidth="174.0" stylesheets="@../style/ManageOrder.css" text="Update Order Detail" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="13.0" prefHeight="51.0" prefWidth="1245.0" style="-fx-background-color: white;" text="Manage Orders" textAlignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="571.0" text="Click On Order to View Order Details" textFill="#0098ff" underline="true" />
+      <Label layoutX="90.0" layoutY="563.0" prefHeight="33.0" prefWidth="41.0" text="Tip :" textFill="#0098ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="596.0" layoutY="571.0" text="You can Update only Order Qty &amp; Order Price only. Ones You update an Order Detail, your Payment aslo update" textFill="#0098ff" underline="true" />
+      <Label layoutX="546.0" layoutY="563.0" prefHeight="33.0" prefWidth="48.0" text="Note :" textFill="#0098ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

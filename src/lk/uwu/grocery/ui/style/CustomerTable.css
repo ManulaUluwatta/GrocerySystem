@@ -1,0 +1,13 @@
+/*#customerDetails_tbl{*/
+    /*-fx-background-color: #0098FF;*/
+    /*-fx-background-insets: 1;*/
+    /*-fx-background-radius: 1em;*/
+    /*-fx-border-radius: 2em;*/
+    /*-fx-effect: dropshadow(three-pass-box, black, 2, 0, 0, 0);*/
+/*}*/
+.table-view .column-header .label{
+    -fx-text-fill: darkblue;
+    -fx-font-weight: 100;
+    -fx-font-size: 14px;
+
+}
