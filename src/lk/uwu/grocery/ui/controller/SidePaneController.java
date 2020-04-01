@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
@@ -44,6 +45,20 @@ public class SidePaneController implements Initializable{
         @FXML
         void homeButtonAction(ActionEvent event) {
 
+        }
+
+        @FXML
+        void viewUserProfileAction(ActionEvent event) {
+                try {
+                        dash = FXMLLoader.load(getClass().getResource("/lk/uwu/grocery/ui/fxml/ManageUserProfile.fxml"));
+                        DashBoardController.rootPane.getChildren().setAll(dash);
+                        DashBoardController.sDrawer.close();
+                        DashBoardController.sDrawer.toBack();
+
+                } catch (IOException e) {
+                        e.printStackTrace();
+                }
+                DashBoardController.humburgAction(event);
         }
 
         @FXML
