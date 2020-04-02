@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="710.0" prefWidth="1366.0" style="-fx-background-color: #0098FF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.DashBoardController">
    <children>
       <Label layoutY="657.0" prefHeight="52.0" prefWidth="1366.0" style="-fx-background-color: #0098FF;" />
-      <Label layoutX="-1.0" layoutY="-1.0" prefHeight="52.0" prefWidth="1366.0" style="-fx-background-color: #0098FF;" />
+      <Label layoutX="-1.0" layoutY="-1.0" prefHeight="52.0" prefWidth="1366.0" style="-fx-background-color: #0098FF;" textAlignment="CENTER" />
       <JFXHamburger fx:id="hamburger" layoutX="-1.0" layoutY="7.0" prefHeight="36.0" prefWidth="51.0" />
       <AnchorPane fx:id="fade" layoutX="87.0" layoutY="52.0" prefHeight="605.0" prefWidth="1259.0" />
       <AnchorPane fx:id="anchorView" layoutX="87.0" layoutY="52.0" prefHeight="605.0" prefWidth="1259.0" style="-fx-background-color: #ecf0f1;" />
@@ -40,5 +40,6 @@
             <Image url="@../images/instagram.png" />
          </image>
       </ImageView>
+      <Label fx:id="dashBoadMain_lbl" layoutX="86.0" layoutY="-1.0" prefHeight="52.0" prefWidth="1259.0" textAlignment="CENTER" />
    </children>
 </AnchorPane>

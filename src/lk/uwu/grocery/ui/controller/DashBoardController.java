@@ -11,6 +11,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
@@ -28,6 +29,10 @@ public class DashBoardController implements Initializable {
     @FXML
     private AnchorPane dash;
     public static AnchorPane sDash;
+
+    @FXML
+    private Label dashBoadMain_lbl;
+    public static Label dashBoadMain_lbl2;
 
     @FXML
     private JFXDrawer drawer;
@@ -66,6 +71,8 @@ public class DashBoardController implements Initializable {
         sDrawer=drawer;
         sHam=hamburger;
         sDash=dash;
+
+        dashBoadMain_lbl2=dashBoadMain_lbl;
        fade.setVisible(false);
 
        String userName=userLoginController.usernName;
@@ -151,6 +158,8 @@ public class DashBoardController implements Initializable {
             delayPlay.play();
             //sDrawer.close();
             //sDrawer.setVisible(false);
+
+            dashBoadMain_lbl2.setText("Place Order Form");
 
         } catch (IOException ex) {
             Logger.getLogger(SidePaneController.class.getName()).log(Level.SEVERE, null, ex);

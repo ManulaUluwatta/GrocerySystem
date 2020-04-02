@@ -76,7 +76,7 @@
          <font>
             <Font size="14.0" />
          </font></JFXButton>
-      <JFXButton fx:id="viewSummary_btn1" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="501.0" onAction="#viewSummaryAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="User Profile">
+      <JFXButton fx:id="viewSummary_btn1" alignment="BASELINE_LEFT" layoutX="14.0" layoutY="501.0" onAction="#viewUserProfileAction" prefHeight="45.0" prefWidth="230.0" stylesheets="@../style/SidePane.css" text="User Profile">
          <font>
             <Font size="14.0" />
          </font>

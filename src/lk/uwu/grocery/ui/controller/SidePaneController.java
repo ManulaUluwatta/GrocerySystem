@@ -42,6 +42,8 @@ public class SidePaneController implements Initializable{
         @FXML
         private JFXButton placeOrder_btn;
 
+        private DashBoardController dashBoardController;
+
         @FXML
         void homeButtonAction(ActionEvent event) {
 
@@ -59,6 +61,7 @@ public class SidePaneController implements Initializable{
                         e.printStackTrace();
                 }
                 DashBoardController.humburgAction(event);
+                dashBoardController.dashBoadMain_lbl2.setText("Manage User Profile Form");
         }
 
         @FXML
@@ -73,6 +76,7 @@ public class SidePaneController implements Initializable{
                         e.printStackTrace();
                 }
                 DashBoardController.humburgAction(event);
+                dashBoardController.dashBoadMain_lbl2.setText("Manage Customer Form");
         }
 
         @FXML
@@ -85,6 +89,7 @@ public class SidePaneController implements Initializable{
                         e.printStackTrace();
                 }
                 DashBoardController.humburgAction(event);
+                dashBoardController.dashBoadMain_lbl2.setText("Manage Item Form");
         }
 
         @FXML
@@ -99,6 +104,7 @@ public class SidePaneController implements Initializable{
                         e.printStackTrace();
                 }
                 DashBoardController.humburgAction(event);
+                dashBoardController.dashBoadMain_lbl2.setText("Manage Supplier Form");
         }
         @FXML
         void placeOrderBtnAction(ActionEvent event) {
@@ -112,6 +118,7 @@ public class SidePaneController implements Initializable{
                         e.printStackTrace();
                 }
                 DashBoardController.humburgAction(event);
+                dashBoardController.dashBoadMain_lbl2.setText("Place Order Form");
         }
         @FXML
         void viewSummaryAction(ActionEvent event) {
@@ -130,6 +137,7 @@ public class SidePaneController implements Initializable{
                         e.printStackTrace();
                 }
                 DashBoardController.humburgAction(event);
+                dashBoardController.dashBoadMain_lbl2.setText("Order Details");
         }
 
 
