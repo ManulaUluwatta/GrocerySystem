@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="605.0" prefWidth="1269.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.ManageOrderFormController">
    <children>
-      <AnchorPane layoutX="8.0" layoutY="10.0" prefHeight="588.0" prefWidth="1265.0" style="-fx-background-color: white;">
+      <AnchorPane layoutX="2.0" layoutY="10.0" prefHeight="588.0" prefWidth="1265.0" style="-fx-background-color: white;">
          <effect>
             <DropShadow />
          </effect>
@@ -24,7 +24,7 @@
               </columns>
             </TableView>
             <Separator layoutX="400.0" layoutY="87.0" orientation="VERTICAL" prefHeight="343.0" prefWidth="7.0" />
-            <TableView fx:id="orderDatail_tbl" layoutX="424.0" layoutY="24.0" prefHeight="450.0" prefWidth="840.0">
+            <TableView fx:id="orderDatail_tbl" layoutX="418.0" layoutY="24.0" prefHeight="450.0" prefWidth="840.0">
               <columns>
                 <TableColumn fx:id="orderDetailID_dcl" prefWidth="127.0" text="Order Detail ID" />
                 <TableColumn fx:id="orderID_dcl" prefWidth="97.0" text="Order ID" />

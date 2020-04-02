@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="400.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.ListOfMajorCategroyController">
    <children>
-      <TableView fx:id="majorCategory_tbl" layoutX="13.0" layoutY="42.0" onMouseClicked="#majorCategoryTableAction" prefHeight="344.0" prefWidth="382.0">
+      <TableView fx:id="majorCategory_tbl" layoutX="6.0" layoutY="7.0" onMouseClicked="#majorCategoryTableAction" prefHeight="383.0" prefWidth="396.0">
          <columns>
             <TableColumn fx:id="tItemCode" prefWidth="157.0" text="Major Category ID" />
             <TableColumn fx:id="tItemName" prefWidth="244.0" text="Major Category Name" />
          </columns>
       </TableView>
-      <Label alignment="CENTER" layoutX="14.0" layoutY="7.0" prefHeight="30.0" prefWidth="382.0" style="-fx-background-color: white;" text="List Of Major Category">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-         <effect>
-            <DropShadow />
-         </effect>
-      </Label>
    </children>
 </AnchorPane>

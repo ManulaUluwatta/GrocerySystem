@@ -6,15 +6,14 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="393.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.ListOfSubCategoryController">
    <children>
       <TableView fx:id="subCategory_tbl" layoutX="10.0" layoutY="58.0" onMouseClicked="#subCategoryTableAction" prefHeight="322.0" prefWidth="578.0">
          <columns>
             <TableColumn fx:id="tMajorCatID" prefWidth="124.0" text="Category ID" />
-            <TableColumn fx:id="tMajorCatName" prefWidth="180.0" text="Category Name" />
-            <TableColumn fx:id="tSubCatID" prefWidth="109.0" text="Sub Category ID" />
-            <TableColumn fx:id="tSubCatName" prefWidth="164.0" text="Sub Category Name" />
+            <TableColumn fx:id="tMajorCatName" prefWidth="159.0" text="Category Name" />
+            <TableColumn fx:id="tSubCatID" prefWidth="144.0" text="Sub Category ID" />
+            <TableColumn fx:id="tSubCatName" prefWidth="150.0" text="Sub Category Name" />
          </columns>
       </TableView>
       <JFXButton fx:id="search_btn" layoutX="200.0" layoutY="18.0" onAction="#saerchButtonAction" prefHeight="29.0" prefWidth="90.0" stylesheets="@../style/Category.css" text="Search" />
