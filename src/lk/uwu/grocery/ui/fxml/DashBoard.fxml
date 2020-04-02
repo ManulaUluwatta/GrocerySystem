@@ -6,6 +6,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="710.0" prefWidth="1366.0" style="-fx-background-color: #0098FF;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uwu.grocery.ui.controller.DashBoardController">
    <children>
@@ -40,6 +41,10 @@
             <Image url="@../images/instagram.png" />
          </image>
       </ImageView>
-      <Label fx:id="dashBoadMain_lbl" layoutX="86.0" layoutY="-1.0" prefHeight="52.0" prefWidth="1259.0" textAlignment="CENTER" />
+      <Label fx:id="dashBoadMain_lbl" alignment="CENTER" layoutX="86.0" layoutY="-1.0" prefHeight="52.0" prefWidth="1259.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
