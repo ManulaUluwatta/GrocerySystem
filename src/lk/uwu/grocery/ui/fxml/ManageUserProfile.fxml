@@ -17,12 +17,12 @@
             <DropShadow />
          </effect>
       </AnchorPane>
-      <TableView fx:id="userProfile_tbl" layoutX="6.0" layoutY="287.0" onMouseClicked="#userProfileAction" prefHeight="310.0" prefWidth="1256.0">
+      <TableView fx:id="userProfile_tbl" layoutX="6.0" layoutY="287.0" onMouseClicked="#userProfileTableAction" prefHeight="310.0" prefWidth="1256.0">
         <columns>
-          <TableColumn prefWidth="161.00003051757812" text="User ID" />
-          <TableColumn prefWidth="359.0" text="User Name" />
-            <TableColumn prefWidth="389.0000305175781" text="Admin Name" />
-            <TableColumn prefWidth="330.0" text="Admin Email" />
+          <TableColumn fx:id="passIDTbl_cl" prefWidth="161.00003051757812" text="User ID" />
+          <TableColumn fx:id="userNameTbl_cl" prefWidth="359.0" text="User Name" />
+            <TableColumn fx:id="adminNameTbl_cl" prefWidth="389.0000305175781" text="Admin Name" />
+            <TableColumn fx:id="adminEmaillTbl_cl" prefWidth="330.0" text="Admin Email" />
         </columns>
          <effect>
             <DropShadow />

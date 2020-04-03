@@ -19,17 +19,17 @@ public class UserProfileControllerImpl implements UserProfileController {
 
     @Override
     public boolean add(UserProfileDTO dto) throws ClassNotFoundException, SQLException {
-        return false;
+        return userProfileDAO.add(dto);
     }
 
     @Override
     public boolean update(UserProfileDTO dto) throws ClassNotFoundException, SQLException {
-        return false;
+        return userProfileDAO.update(dto);
     }
 
     @Override
     public boolean delete(String name) throws ClassNotFoundException, SQLException {
-        return false;
+        return userProfileDAO.delete(name);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package lk.uwu.grocery.dao.custom.impl;
 
+import lk.uwu.grocery.controller.ControllerFactory;
 import lk.uwu.grocery.dao.custom.UserProfileDAO;
 import lk.uwu.grocery.db.ConnectionFactory;
 import lk.uwu.grocery.dto.CustomerDTO;
@@ -7,27 +8,61 @@ import lk.uwu.grocery.dto.OrderDetailDTO;
 import lk.uwu.grocery.dto.SuperDTO;
 import lk.uwu.grocery.dto.UserProfileDTO;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 public class UserProfileDAOImpl implements UserProfileDAO {
 
     @Override
     public boolean add(UserProfileDTO dto) throws ClassNotFoundException, SQLException {
-        return false;
+        String sql="Insert into user_profile values(?,?,?,?,?,?)";
+        Connection connection= ConnectionFactory.getInstance().getConnection();
+        PreparedStatement stm=connection.prepareStatement(sql);
+        stm.setObject(1,dto.getPassID());
+        stm.setObject(2,dto.getUserName());
+        stm.setObject(3,dto.getPassword());
+        stm.setObject(4,dto.getAdminName());
+        stm.setObject(5,dto.getAdminEmail());
+        stm.setObject(6,dto.getPhotoPath());
+        int res=stm.executeUpdate();
+        if(res>0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     @Override
     public boolean update(UserProfileDTO dto) throws ClassNotFoundException, SQLException {
-        return false;
+        String sql="update user_profile set user_name=? password=? admin_name=? admin_email=? photo_path=? where pass_id=? ";
+        Connection connection=ConnectionFactory.getInstance().getConnection();
+        PreparedStatement stm=connection.prepareStatement(sql);
+        stm.setObject(1,dto.getUserName());
+        stm.setObject(2,dto.getPassword());
+        stm.setObject(3,dto.getAdminName());
+        stm.setObject(4,dto.getAdminEmail());
+        stm.setObject(5,dto.getPhotoPath());
+        stm.setObject(6,dto.getPassID());
+        int res=stm.executeUpdate();
+        if(res>0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     @Override
     public boolean delete(String name) throws ClassNotFoundException, SQLException {
-        return false;
+        Connection connection=ConnectionFactory.getInstance().getConnection();
+        Statement stm=connection.createStatement();
+        String sql="delete from user_profile where pass_id='"+name+"'";
+        int res=stm.executeUpdate(sql);
+        if(res>0){
+            return true;
+        }else {
+            return false;
+        }
+
     }
 
     @Override
