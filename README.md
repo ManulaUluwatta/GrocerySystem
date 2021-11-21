@@ -4,11 +4,14 @@
 
 ## Some screenshot of Grocery Management System
 
-| ![1](https://user-images.githubusercontent.com/29893232/142775630-80cc3f3d-c1d8-40c6-bb62-04d2386f85a4.png) | ![2](https://user-images.githubusercontent.com/29893232/142775633-0bbf1f5e-8af1-41e6-a1c4-497b947b5250.png) | ![3](https://user-images.githubusercontent.com/29893232/142775634-1de5c162-d31c-4bec-bfe3-ea010a06deaa.png) | ![4](https://user-images.githubusercontent.com/29893232/142775635-7b6fef67-319c-455a-aa91-f967b3e8f8e5.png) |
-| :--------------------------------: | :---------------------------------------: | :----------------------------------: | :----------------------------------: |
+| ![1](https://user-images.githubusercontent.com/29893232/142775630-80cc3f3d-c1d8-40c6-bb62-04d2386f85a4.png) | ![2](https://user-images.githubusercontent.com/29893232/142775633-0bbf1f5e-8af1-41e6-a1c4-497b947b5250.png) |
+| :--------------------------------: | :---------------------------------------: | 
 |             Welcome Screen           |             Login             |            Sidebar Menu            |            Home             |
 
 
+| ![3](https://user-images.githubusercontent.com/29893232/142775634-1de5c162-d31c-4bec-bfe3-ea010a06deaa.png) | ![4](https://user-images.githubusercontent.com/29893232/142775635-7b6fef67-319c-455a-aa91-f967b3e8f8e5.png) | 
+| :----------------------------------: | :----------------------------------: |
+|            Sidebar Menu            |            Home             |
 
 
 
