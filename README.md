@@ -1,5 +1,8 @@
 # GrocerySystem
-2nd year semester 2 project
+
+It is a system that implements many aspects of the retail store
+such as product, customer, billing, and inventory management
+that meet an efficient and effective service path.
 
 
 ## Some screenshot of Grocery Management System
