@@ -4,7 +4,7 @@
 
 ## Some screenshot of Grocery Management System
 
-| ![1](https://user-images.githubusercontent.com/29893232/142775630-80cc3f3d-c1d8-40c6-bb62-04d2386f85a4.png) | ![2](https://user-images.githubusercontent.com/29893232/142775633-0bbf1f5e-8af1-41e6-a1c4-497b947b5250.png) |
+| ![1](https://user-images.githubusercontent.com/29893232/144301862-3c89bce9-f82b-44b7-bf3b-20406aed2956.PNG) | ![2](https://user-images.githubusercontent.com/29893232/144301925-bbac1e63-1cb1-4b3b-8098-c980508ed573.PNG) |
 | :--------------------------------: | :---------------------------------------: | 
 |             Welcome Screen           |             Login             |
 
